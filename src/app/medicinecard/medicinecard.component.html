@@ -1,0 +1,174 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="navbars">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+       
+        <div class="dropdowns">
+          <button class="dropbtns">Covid info
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+          <div class="dropdowns-content">
+            <a routerLink="/guide" routerLinkActive="active">Covid guidelines</a>
+            <a routerLink="/symptoms" routerLinkActive="active">Covid symptoms</a>
+            <a routerLink="/cure" routerLinkActive="active">Covid precautions and cure</a>
+            
+          </div>
+        </div>
+        <a href="#about">About</a>
+        <a routerLink="/contact" routerLinkActive="active">Contact Us</a>
+        <a (click)="logout()" >Log Out</a>
+      </div>
+
+    <div class="wrapper">
+        <br>
+        
+        
+        <h1>Covid Medicines Prescribed by Expert Doctors</h1>
+        <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container" >
+                          <div class="front"   (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg); "  >
+                              <div class="inner">
+                                  <p>Favipiravir Tablets</p>
+                    <!-- <span>Lorem ipsum</span> -->
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner" (click)="cardm()">
+                                <p>Favipiravir has shown rapid viral clearance and faster clinical improvement</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);" >
+                              <div class="inner">
+                                  <p>Azithromycin</p>
+                    <!-- <span>Lorem ipsum</span> -->
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner" (click)="cardm()">
+                                  <p>It is an antibiotic madication used to trear a number of bacterial infections.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg)">
+                              <div class="inner">
+                                  <p>Paracetamol</p>
+                    <!-- <span>Lorem ipsum</span> -->
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner" (click)="cardm()">
+                                  <p>Paracetamol, also known as acetaminophen, is a medication used to treat fever and mild to moderate pain.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>            
+              </div>
+              <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); "  >
+                            <div class="inner">
+                                <p>Zinc Tablets</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="cardm()">
+                              <p>Zinc Tablets provide necessary zinc supplement in our body to boost immunity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg);" >
+                            <div class="inner">
+                                <p>Vitamin C</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="cardm()">
+                                <p>Rich source of antioxidants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg); "  >
+                            <div class="inner">
+                                <p>Remdesivir</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="cardm()">
+                              <p>Remdesivir (Veklury) is the first drug approved by the FDA for treating the SARS-CoV-2 virus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
+            </div>
+            <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
+                            <div class="inner">
+                                <p>Doxycycline Capsule</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="cardm()">
+                                <p>Doxycycline is an antibiotic medicine used to treat bacterial infections in your body.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);" >
+                            <div class="inner">
+                                <p>Ivermectin Tablets</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="cardm()">
+                                <p>Ivermectin is an anthelmintic agent used to treat various parasitic infestations of the human body.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
+                            <div class="inner">
+                                <p>All Medicines</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="cardm()">
+                                <p>Get Information about ditributors providing COVID-19 and other medicines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+       </div>
+       </body>

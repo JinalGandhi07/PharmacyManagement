@@ -1,0 +1,35 @@
+<html>
+<head>
+ 	<title>Login and Registration</title>
+ 	<!--<link rel="stylesheet" type="text/css">-->
+</head>
+<body>
+	<div class="hero">
+		<div class="formbox">
+			<div class="button-box">
+				<div id = "btn"></div>
+				<button type="button" class="toggle-btn" (click)="login()" >Login</button>
+				<button type="button" class="toggle-btn" (click)="register()">Register</button>
+              
+		</div>
+       
+			<div class="social-icons">
+			<img src="assets/fb2.jpeg">
+			<img src="assets/tw2.jpeg">
+			<img src="assets/gp2.jpeg">
+            
+			</div>
+			<form  id="myform" class="input-group">
+             <input type="email" name="Email" [(ngModel)]="Email" class="input-field" placeholder="User Id" >
+			
+             <input type="password" name="Password" class="input-field" [(ngModel)]="Password" placeholder="Password" >
+			
+              <input type="checkbox" class="check-box"> <span >Remember Password</span>
+              <button type="submit" (click)="submit()" class="submit-btn">Log in</button>
+			 </form>
+			
+		</div>
+					 		
+	</div>
+</body>
+</html>

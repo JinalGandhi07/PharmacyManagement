@@ -1,0 +1,174 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="navbars">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+       
+        <div class="dropdowns">
+          <button class="dropbtns">Covid info
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+          <div class="dropdowns-content">
+            <a routerLink="/guide" routerLinkActive="active">Covid guidelines</a>
+            <a routerLink="/symptoms" routerLinkActive="active">Covid symptoms</a>
+            <a routerLink="/cure" routerLinkActive="active">Covid precautions and cure</a>
+            
+          </div>
+        </div>
+        <a href="#about">About</a>
+        <a routerLink="/contact" routerLinkActive="active">Contact Us</a>
+        <a (click)="logout()" >Log Out</a>
+      </div>
+
+    <div class="wrapper">
+        <br>
+        
+        
+        <h1>Know about your nearby Vaccination-Camps</h1>
+        <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front"  style="background-image: url(https://udaipurtourism.co.in/images/places-to-visit/headers/taj-lake-palace-udaipur-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg); "  >
+                              <div class="inner">
+                                  <p>Udaipur</p>
+                    <!-- <span>Lorem ipsum</span> -->
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner" (click)="vlist()">
+                                <p>Get information about vaccination-camps in Udaipur and get registered.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front"  style="background-image: url(https://www.micato.com/wp-content/uploads/2018/09/jaipur-1110x700.jpg);" >
+                              <div class="inner">
+                                  <p>Jaipur</p>
+                    <!-- <span>Lorem ipsum</span> -->
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner" (click)="vlist()">
+                                  <p>Get information about vaccination-camps in Jaipur and get registered.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" (click)="vlist()" style="background-image: url(https://www.swantour.com/blogs/wp-content/uploads/2016/08/Pushkar.jpg)">
+                              <div class="inner">
+                                  <p>Ajmer</p>
+                    <!-- <span>Lorem ipsum</span> -->
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner" (click)="vlist()">
+                                  <p>Get information about vaccination-camps in Ajmer and get registered.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>            
+              </div>
+              <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="vlist()" style="background-image: url(https://www.dham-yatra.com/blog/wp-content/uploads/2019/03/Garadia-Mahadev-Temples.jpg); "  >
+                            <div class="inner">
+                                <p>Kota</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="vlist()">
+                              <p>Get information about vaccination-camps in Kota and get registered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="vlist()" style="background-image: url(https://static.toiimg.com/thumb/68427211/3.jpg?width=1200&height=900);" >
+                            <div class="inner">
+                                <p>Jaisalmer</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="vlist()">
+                                <p>Get information about vaccination-camps in Jaisalmer and get registered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front" (click)="vlist()" style="background-image: url(https://images.citizenmatters.in/wp-content/uploads/sites/2/2020/04/29111406/Bhilwara-678x381.jpg); "  >
+                            <div class="inner">
+                                <p>Bhilwara</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="vlist()">
+                              <p>Get information about vaccination-camps in Bhilwara and get registered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
+            </div>
+            <div class="cols">
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front"  style="background-image: url(https://media.architecturaldigest.in/wp-content/uploads/2019/10/Bikaner-Avani-Rai-fetaured-image.jpg)">
+                            <div class="inner">
+                                <p>Bikaner</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="vlist()">
+                                <p>Get information about vaccination-camps in Bikaner and get registered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front"  style="background-image: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Mehrangarh-Fort-Jodhpur.jpg)" >
+                            <div class="inner">
+                                <p>Jodhpur</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="vlist()">
+                                <p>Get information about vaccination-camps in Jodhpur and get registered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" ontouchstart="this.classList.toggle('hover');">
+                    <div class="container">
+                        <div class="front"  style="background-image: url(https://www.swantour.com/blogs/wp-content/uploads/2019/02/Chittorgarh-Fort.jpg)">
+                            <div class="inner">
+                                <p>Chittorgarh</p>
+                  <!-- <span>Lorem ipsum</span> -->
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner" (click)="vlist()">
+                                <p>Get information about vaccination-camps in Chittorgarh and get registered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+       </div>
+       </body>

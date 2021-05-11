@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*My hum... body.. yeah..*/
+// body {
+// 	background-color: #353B3F;
+// 	font-family: 'Roboto', sans-serif;
+// }
+/* The card */
+.card{
+	position : relative;
+	height: 540px;
+	width: 1000px;
+	margin : 60px 180px 0px 100px;
+	// background-color : #FFF;
+    background: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+	// -webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	// -moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	// box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+	//box-shadow: 2px 2px 10px black;
+}
+/* Image on the left side */
+.thumbnail {
+	float : left;
+	position : relative; 
+	left : 30px;
+	top : -30px;
+	height : 530px;
+	width : 530px;
+	// -webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+	// -moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+	// box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 10px black;
+	overflow: hidden;
+/*object-fit: cover;*/
+/*object-position: center;*/
+}
+img.left{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+/* Right side of the card */
+.right{
+	margin-left : 590px;
+	margin-right : 20px;
+}
+h1{
+	padding-top : 15px;
+	font-size : 1.3rem;
+	color : #4B4B4B;
+}
+
+.separator{
+	margin-top : 10px;
+	border : 1px solid #C3C3C3;
+}
+p{
+	text-align: justify;
+	padding-top : 10px;
+	font-size : 0.95rem;
+	line-height: 150%;
+	color : #4B4B4B;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(14, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(14, 1, 1);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(245, 238, 238);
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropbtn:hover{
+    box-shadow:  2px 10px black;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+   
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

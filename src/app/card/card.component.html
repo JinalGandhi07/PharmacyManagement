@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cards</title>
+	<!-- <link rel="stylesheet" type="text/css" href="cards.css"> -->
+</head>
+<body>
+	<div class="main">
+		<div class = "space">
+			<div class="navbar">
+                <a routerLink="/home" routerLinkActive="active">Home</a>
+               
+                <div class="dropdown">
+                  <button class="dropbtn">Covid info
+                    <!-- <i class="fa fa-caret-down"></i> -->
+                  </button>
+                  <div class="dropdown-content">
+                    <a routerLink="/guide" routerLinkActive="active">Covid guidelines</a>
+                    <a routerLink="/symptoms" routerLinkActive="active">Covid symptoms</a>
+                    <a routerLink="/cure" routerLinkActive="active">Covid precautions and cure</a>
+                    
+                  </div>
+                </div>
+                <a href="#about">About</a>
+                <a routerLink="/contact" routerLinkActive="active">Contact Us</a>
+                <a (click)="logout()" >Log Out</a>
+              </div>
+
+			
+
+
+			
+
+			
+            <br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			
+			
+
+
+		</div>
+	<div class="cards">
+		<div class="image">
+			<img src="assets/medicine3.jpg">
+			
+
+		</div>
+
+		<div class="title">
+			<h1>
+				Medicines
+			</h1>
+			
+		</div>
+		<div class="description">
+			<p>Find the medicines you need!</p>
+			<button (click)="medicinecard()">Check Availability</button>
+			
+
+		</div>
+		
+
+
+	</div>
+
+
+	<div class="cards">
+		<div class="image">
+			<img src="assets/vaccine3.jpg">
+			
+
+		</div>
+
+		<div class="title">
+			<h1>
+				Vaccine
+			</h1>
+			
+		</div>
+		<div class="description">
+			<p>Find the vaccines you need!</p>
+			<button (click)="vaccine()">Check Availability</button>
+			
+
+		</div>
+		
+
+
+	</div>
+
+	<div class="cards">
+		<div class="image">
+			<img src="assets/beds3.jpg">
+			
+
+		</div>
+
+		<div class="title">
+			<h1>
+				Beds
+			</h1>
+			
+		</div>
+		<div class="description">
+			<p>Find beds in the nearby hospitals!</p>
+			<button  (click)="bed()">Check Availability</button>
+			
+
+		</div>
+		
+
+
+	</div>
+	<div class="cards">
+		<div class="image">
+			<img src="assets/Plasma3.jpg">
+			
+
+		</div>
+
+		<div class="title">
+			<h1>
+				Plasma
+			</h1>
+			
+		</div>
+		<div class="description">
+			<p>Find or Donate Plasma here!</p>
+			<button (click)="plasma()">Check Availability</button>
+			
+
+		</div>
+		
+
+
+	</div>
+</div>
+
+</body>
+</html>

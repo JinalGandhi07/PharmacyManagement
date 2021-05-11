@@ -1,0 +1,78 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<div class="navbars">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+   
+    <div class="dropdowns">
+      <button class="dropbtns">Covid info
+        <!-- <i class="fa fa-caret-down"></i> -->
+      </button>
+      <div class="dropdowns-content">
+        <a routerLink="/guide" routerLinkActive="active">Covid guidelines</a>
+        <a routerLink="/symptoms" routerLinkActive="active">Covid symptoms</a>
+        <a routerLink="/cure" routerLinkActive="active">Covid precautions and cure</a>
+        
+      </div>
+    </div>
+    <a href="#about">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact Us</a>
+    <a (click)="logout()" >Log Out</a>
+  </div>
+
+<div class="container my-5">
+    <section>
+        <div class="text-center mb-5 col-md-10 mx-auto">
+            <h2 class="font-weight-bold display-4 " style="font-family: 'Times New Roman', Times, serif; font-size: 37px; color: black;">COVID-19 Precautions <span style="color:black; font-family: 'Times New Roman', Times, serif;">and Treatment</span></h2>
+            <!-- <p class="mx-5 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores dolore, dolorum
+                error eveniet molestiae necessitatibus officiis possimus praesentium quas.</p> -->
+        </div>
+        <div style="margin-top: 0px;" class="row">
+            <div class="col-md-4 my-4 ">      
+          <div class="card">        
+        <div class="icon">
+                    <i class="bi bi-calendar2-x-fill"></i></div>
+                    <div class="px-3 text-center pb-3">
+                        <h5 class="text-uppercase" style="font-weight: 600">Precaution</h5>
+                        <p style="text-align: left;">1. Wash your hands or sanitize them using soap and sanitizers.</p>
+                            <p style="text-align: left;">2. Maintain 1 meter distance from a person sneezing, and cover your mouth while coughing.</p>
+                            <p style="text-align: left;">3. Avoid touching your face refrain from activities that weakens the lungs.</p>
+                            <p style="text-align: left;">4. Avoid unnecessary travel, practice physical distancing and stay home.</p>
+                        </div>
+                </div>                    
+            </div>
+
+            <div class="col-md-4 my-4 ">      
+          <div class="cardmiddle">        
+        <div class="icon">
+            <i class="bi bi-shop"></i></div>
+                    <div class="px-3 text-center pb-3">
+                        <h5 class="text-uppercase" style="font-weight: 600">Treatment At Home</h5>
+                        
+                        <p style="text-align: left;">If your symptoms are mild enough, then you can recover at home:</p>
+                            <p style="text-align: left;">1. Rest and stay home.</p>
+                            <p style="text-align: left;">2. Drink fluids and monitor your oxygen level timely.</p>
+                            <p style="text-align: left;">3. Get help from your doctor about necessary medications and exercises.</p>
+                        
+                    </div>
+                </div>     
+                
+            </div>
+            <div class="col-md-4 my-4 ">      
+                <div class="card">        
+              <div class="icon">
+                <i class="bi bi-plus-circle-fill"></i></div>
+                          <div class="px-3 text-center pb-3">
+                              <h5 class="text-uppercase" style="font-weight: 600">Treatment At Hospital</h5>
+                              <p style="text-align: left;">Scientists all around the world are working to find the optimum treatment for COVID 19</p>
+                              <p style="text-align: left;">Supportive care includes oxygen cylinders or severely ill patients and people who require advanced respiratory support.</p>
+                              <p style="text-align: left;">Doctors may give you an antiviral medicine called remdesivir which is the first drug approved by the FDA for treatment of hospitalized COVID patients over the age of 12.</p>
+                           
+                          </div>
+                      </div>                    
+                  </div>
+        </div>
+    </section>
+</div>

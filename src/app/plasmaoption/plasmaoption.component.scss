@@ -1,0 +1,308 @@
+$bg-color: #E6E5E1;
+$shdow-gray: #d3d3d5;
+$orange: #fff;
+$blue: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+i {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(315deg,#96c8fb 0%,#ddbdfc 74%);
+}
+h2{
+  pointer-events:none;
+}
+
+body {
+  background-color: floralwhite;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+
+  .card {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background:white;
+    overflow: hidden;
+    margin-bottom: 12px;
+    
+
+    &:before {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      top: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      
+    }
+    &:after {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      bottom: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+     
+    }
+    ul {
+      z-index: 99;
+      position: absolute;
+      left: 39px;
+      top: 5px;
+      list-style-type: none;
+      li {
+        width: 2px;
+        height: 2px;
+        border-radius: 2px;
+        margin: 6px 0;
+        background-color: $blue;
+        color: black;
+      }
+    }
+    h2 {
+      z-index: 99;
+      font-family: 'Times New Roman', Times, serif;
+      position: absolute;
+      bottom: 0;
+      right: 130px;
+      font-size: 40px;
+      font-weight: 600;
+      color:black;
+      
+    }
+
+    .fa-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 75px;
+      bottom: 25px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    p {
+      z-index: 99;
+      position: absolute;
+      top: 20px;
+      right: 70px;
+      color: black;
+      opacity: 0.7;
+      font-size: 15px;
+      letter-spacing: 1px;
+      writing-mode: vertical-lr;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      font-weight: 600;
+    }
+    .pic {
+      z-index: 100;
+      width: 400px;
+      height: 200px;
+      background-image: url(/assets/donation2.jpg);
+      background-size: 100% 100%;
+      filter: grayscale(20%);
+      
+    }
+
+    .social {
+      position: absolute;
+      left: 60px;
+      top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 180px;
+      height: 64px;
+      border-radius: 80px;
+      color: black;
+    }
+
+    .social i:nth-of-type(1) {
+      -webkit-transition-delay: 0.4s;
+      transition-delay: 0.4s;
+    }
+
+    .social i:nth-of-type(2) {
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s;
+    }
+
+    .social i:nth-of-type(3) {
+      -webkit-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+
+    .social i:nth-of-type(4) {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
+
+    // &:hover i {
+    //   opacity: 1;
+    //   -webkit-transform: scale(1);
+    //   transform: scale(1);
+    // }
+
+    button {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 30px;
+      height: 30px;
+      background-color: $orange;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      outline:none;
+      transition: all 0.3s ease;
+      mix-blend-mode: hard-light;
+
+      i {
+        font-size: 3rem;
+      }
+    }
+
+    // &:hover button {
+    //   transform: scale(16.5);
+    // }
+
+    // &:hover p {
+    //   color: #fff;
+    // }
+    
+    &:hover .pic {
+      filter: grayscale(0);
+      box-shadow: 2px 2px 10px black;
+      cursor: pointer;
+    }
+  }
+  
+  .card2 {
+    .pic {
+      background-image: url(/assets/donation.jpg);
+    }
+    button {
+      background-color: $blue;
+    }
+  }
+}
+
+.dr {
+position: absolute;
+  bottom: 16px; 
+  right: 16px;
+  width:100px;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(14, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(14, 1, 1);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(245, 238, 238);
+  box-shadow: 2px 2px 10px black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropbtn:hover{
+  box-shadow:  2px 10px black;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+ 
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

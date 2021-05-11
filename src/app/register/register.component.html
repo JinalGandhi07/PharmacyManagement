@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<title>Login and Registration</title>
+ 	<!--<link rel="stylesheet" type="text/css">-->
+	
+</head>
+<body>
+	<div class="hero">
+		<div class="formbox">
+			<div class="button-box">
+				
+					<div id = "btn" ></div>
+					<button type="button" class="toggle-btn" (click)="login()" >Login</button>
+					<button type="button" class="toggle-btn" (click)="register()">Register</button>
+				  
+			</div>
+			<!-- <div class="social-icons">
+			<img src="assets/fb2.jpeg">
+			<img src="assets/tw2.jpeg">
+			<img src="assets/gp2.jpeg">
+				
+			</div> -->
+			<form ngNativeValidate id= "register" name="RegForm"   class="input-group" > 
+             <input type="text" class="input-field" placeholder="Name" [(ngModel)]="Name" name="Name" required minlength="3" />
+             <input type="email" class="input-field" placeholder="Email"  [(ngModel)]="Email" name="Email" required />
+			 <input type="tel"  pattern="[0-9]{10}" placeholder="Mobile no." class="input-field"  [(ngModel)]="Phone" name="Phone" title="Mobile no. must contain ten digits"  required>
+             <input type="password" class="input-field" placeholder="Password"  [(ngModel)]="Password" name="Password" required minlength="6" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,32}$" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 6 characters" />
+             <!-- <input type="password" class="input-field" placeholder="ConfirmPassword" [(ngModel)]="ConfirmPassword" name="ConfirmPassword" required minlength="6" /> -->
+			 <br><br>
+              <button type="submit" (click)="submit()" class="submit-btn">Register</button>
+			  
+			 </form>
+					 
+		</div>		
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<div class="navbar">
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Covid info
+      <!-- <i class="fa fa-caret-down"></i> -->
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/guide" routerLinkActive="active">Covid guidelines</a>
+      <a routerLink="/symptoms" routerLinkActive="active">Covid symptoms</a>
+      <a routerLink="/cure" routerLinkActive="active">Covid precautions and cure</a>
+      
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a routerLink="/contact" routerLinkActive="active">Contact Us</a>
+  <a (click)="logout()" >Log Out</a>
+</div>
+
+<div class="card">
+  <div class="thumbnail"><img class="left" src="/assets/symptoms.jpg"/></div>
+  <div class="right">
+    <h1>COVID SYMPTOMS</h1>
+    <div class="separator"></div>
+    <p>COVID-19 affects different people in different ways.<br>
+      <b>  Most common symptoms:</b><br>
+        1.Fever.<br>
+        2.Dry cough.<br>
+        3.Tiredness.<br>
+        
+      <b>  Less common symptoms:</b><br>
+        
+        1.Aches and pains.<br>
+        2.Sore throat.<br>
+        3.Diarrhoea.<br>
+        4.Conjunctivitis.<br>
+        5.Headache.<br>
+        6.Loss of taste or smell.<br>
+        7.A rash on skin, or discolouration of fingers or toes.<br>
+        
+       <b> Serious symptoms:</b><br>
+        
+        1.Difficulty breathing or shortness of breath.<br>
+        2.Chest pain or pressure.<br>
+        3.Loss of speech or movement.<br>
+        
+        Seek immediate medical attention if you have serious symptoms.</p>
+  </div>
+</div>

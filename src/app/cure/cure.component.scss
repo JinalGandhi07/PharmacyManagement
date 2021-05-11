@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    overflow:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover {
+    text-decoration: none;
+}
+.icon{
+    font-size: 40px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.card{
+    overflow: hidden;
+    margin-top: 0;
+    border: black;
+    border-radius: 2%;
+    background:rgb(241, 247, 250);
+    height: 388px;
+    box-shadow: black;
+}
+.card:hover {
+    box-shadow: black;
+    cursor: pointer;
+    background: linear-gradient(315deg,#96c8fb 0%,#ddbdfc 74%);
+}
+.cardmiddle{
+    margin-top: 0;
+    border: black;
+    border-radius: 2%;
+    background: linear-gradient(315deg,#96c8fb 0%,#ddbdfc 74%);
+    height: 388px;
+    box-shadow: black;
+}
+.cardmiddle:hover {
+    box-shadow: black;
+    cursor: pointer;
+    background:rgb(241, 247, 250);
+}
+
+
+.navbars {
+    overflow: hidden;
+    background: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbars a {
+    float: left;
+    font-size: 16px;
+    color: rgb(14, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdowns {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdowns .dropbtns {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(14, 1, 1);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbars a:hover, .dropdowns:hover .dropbtns {
+    background-color: rgb(245, 238, 238);
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdowns-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropbtns:hover{
+    box-shadow:  2px 10px black;
+  }
+  /* Links inside the dropdown */
+  .dropdowns-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdowns-content a:hover {
+    background-color: #ddd;
+   
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdowns:hover .dropdowns-content {
+    display: block;
+  }
