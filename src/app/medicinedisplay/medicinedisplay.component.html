@@ -20,8 +20,6 @@
         <label for="tap-4" class="tap tap-4"></label>
         <label for="tap-5" class="tap tap-5"></label>
       </div>
-     
-     
       <div class="inner-part">
         <label for="imgTap" class="img">
           <img class="img-1" src="/assets/hd3.jpg">
@@ -32,15 +30,14 @@
 		  <!-- <div class="icon"></div> -->
 		  
 <div class="text">
-	<h3><i class="fa fa-plus-circle" style="font-size:36px"></i> Number of Estimated beds for COVID</h3>
-	<p style="text-align: center; font-weight: 600; font-size: 20px;">{{details.MinStock}}</p>
+	<h3><i class=" fa fa-medkit" style="font-size:36px"></i>  Medicines</h3>
+	<p>{{details.Medicines}}</p>
 </div>
 <!-- <button>Read more</button> -->
         </div> 
 </div>
-      
-
-<div class="inner-part">
+     
+      <div class="inner-part">
         <label for="imgTap" class="img">
           <img class="img-2" src="/assets/hd3.jpg">
         </label> 
@@ -50,17 +47,33 @@
 		  <!-- <div class="icon"></div> -->
 		  
 <div class="text">
-	<h3><i class="fa fa-hospital-symbol" style="font-size:36px"></i>  Medicines</h3>
-	<p>{{details.Medicines}}</p>
+	<h3><i class="fa fa-plus-circle" style="font-size:36px"></i> Number of Estimated medicines for COVID</h3>
+	<p style="text-align: center; font-weight: 600; font-size: 20px;">{{details.MinStock}}</p>
 </div>
 <!-- <button>Read more</button> -->
         </div> 
 </div>
+      
+<div class="inner-part">
+  <label for="imgTap" class="img">
+    <img class="img-3" src="/assets/hd3.jpg">
+  </label>
+  <div class="content content-3">
+    <!-- <span>Vitamin C</span> -->
+    <div class="title">{{details.Name}}</div>
+<!-- <div class="icon"></div> -->
+    
+<div class="text">
+<h3><i class="fa fa-map-marker" tyle="font-size:48px"></i> Address</h3>
+<p>{{details.Address}}</p>
+</div>        </div>
+</div>
+
 <div class="inner-part">
         <label for="imgTap" class="img">
-          <img class="img-3" src="/assets/hd3.jpg">
+          <img class="img-4" src="/assets/hd3.jpg">
         </label>
-        <div class="content content-3">
+        <div class="content content-4">
           <!-- <span>Vitamin C</span> -->
           <div class="title">{{details.Name}}</div>
 		  <!-- <div class="icon"></div> -->
@@ -73,9 +86,9 @@
 </div>
 <div class="inner-part">
         <label for="imgTap" class="img">
-          <img class="img-4" src="/assets/hd3.jpg">
+          <img class="img-5" src="/assets/hd3.jpg">
         </label>
-        <div class="content content-4">
+        <div class="content content-5">
           <!-- <span>Vitamin C</span> -->
           <div class="title">{{details.Name}}</div>
 <!-- <div class="icon"></div> -->
@@ -87,20 +100,7 @@
 </div>
 
 
-<div class="inner-part">
-    <label for="imgTap" class="img">
-      <img class="img-5" src="/assets/hd3.jpg">
-    </label>
-    <div class="content content-5">
-      <!-- <span>Vitamin C</span> -->
-      <div class="title">{{details.Name}}</div>
-<!-- <div class="icon"></div> -->
-      
-<div class="text">
-<h3><i class="fa fa-map-marker" tyle="font-size:48px"></i> Address</h3>
-<p>{{details.Address}}</p>
-</div>        </div>
-</div>
+
 
 
 <button type="submit" (click)="back()" class="submit-btn">Go Back</button>
