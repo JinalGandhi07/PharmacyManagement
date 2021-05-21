@@ -20,9 +20,9 @@
             
 			</div>
 			<form  id="myform" class="input-group">
-             <input type="email" name="Email" [(ngModel)]="Email" class="input-field" placeholder="User Id" >
+             <input type="email" name="Email" [(ngModel)]="Email" class="input-field" placeholder="User Id" autocomplete="off">
 			
-             <input type="password" name="Password" class="input-field" [(ngModel)]="Password" placeholder="Password" >
+             <input type="password" name="Password" class="input-field" [(ngModel)]="Password" placeholder="Password" autocomplete="off">
 			
               <input type="checkbox" class="check-box"> <span >Remember Password</span>
               <button type="submit" (click)="submit()" class="submit-btn">Log in</button>

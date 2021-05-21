@@ -30,94 +30,108 @@
         <div class="cols">
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container">
+                        <ng-template let-a="aVariable" [ngTemplateOutletContext]="{aVariable: 'Udaipur'}" [ngTemplateOutlet]="selfie" #selfie>  
                           <div class="front"  style="background-image: url(https://udaipurtourism.co.in/images/places-to-visit/headers/taj-lake-palace-udaipur-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg); "  >
-                              <div class="inner">
-                                  <p>Udaipur</p>
+                            
+                            <div class="inner">
+                                  <p>{{a}}</p>
                     <!-- <span>Lorem ipsum</span> -->
-                              </div>
-                          </div>
+                              </div>                   
+                        </div>
                           <div class="back">
-                              <div class="inner" (click)="vlist()">
+                              <div class="inner" (click)="vlist(a)">
                                 <p>Get information about vaccination-camps in Udaipur and get registered.</p>
                               </div>
                           </div>
+                       </ng-template>
                       </div>
                   </div>
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container">
+                        <ng-template let-b="Variable" [ngTemplateOutletContext]="{Variable: 'Jaipur'}" [ngTemplateOutlet]="selfies" #selfies> 
                           <div class="front"  style="background-image: url(https://www.micato.com/wp-content/uploads/2018/09/jaipur-1110x700.jpg);" >
                               <div class="inner">
-                                  <p>Jaipur</p>
+                                  <p>{{b}}</p>
                     <!-- <span>Lorem ipsum</span> -->
                               </div>
                           </div>
                           <div class="back">
-                              <div class="inner" (click)="vlist()">
+                              <div class="inner" (click)="vlist(b)" >
                                   <p>Get information about vaccination-camps in Jaipur and get registered.</p>
                               </div>
                           </div>
+                          </ng-template>
                       </div>
                   </div>
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container">
-                          <div class="front" (click)="vlist()" style="background-image: url(https://www.swantour.com/blogs/wp-content/uploads/2016/08/Pushkar.jpg)">
+                        <ng-template let-c="ariable" [ngTemplateOutletContext]="{ariable: 'Ajmer'}" [ngTemplateOutlet]="selfiek" #selfiek> 
+                          <div class="front"  style="background-image: url(https://www.swantour.com/blogs/wp-content/uploads/2016/08/Pushkar.jpg)">
                               <div class="inner">
-                                  <p>Ajmer</p>
+                                  <p>{{c}}</p>
                     <!-- <span>Lorem ipsum</span> -->
                               </div>
                           </div>
                           <div class="back">
-                              <div class="inner" (click)="vlist()">
+                              <div class="inner" (click)="vlist(c)" >
                                   <p>Get information about vaccination-camps in Ajmer and get registered.</p>
                               </div>
                           </div>
+                        </ng-template>
                       </div>
                   </div>            
               </div>
               <div class="cols">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="vlist()" style="background-image: url(https://www.dham-yatra.com/blog/wp-content/uploads/2019/03/Garadia-Mahadev-Temples.jpg); "  >
+                        <ng-template let-d="aVariabl" [ngTemplateOutletContext]="{aVariabl: 'Kota'}" [ngTemplateOutlet]="selie" #selie> 
+                        <div class="front"  style="background-image: url(https://www.dham-yatra.com/blog/wp-content/uploads/2019/03/Garadia-Mahadev-Temples.jpg); "  >
                             <div class="inner">
-                                <p>Kota</p>
+                                <p>{{d}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="vlist()">
+                            <div class="inner" (click)="vlist(d)">
                               <p>Get information about vaccination-camps in Kota and get registered.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="vlist()" style="background-image: url(https://static.toiimg.com/thumb/68427211/3.jpg?width=1200&height=900);" >
+                        <ng-template let-e="aVaiable" [ngTemplateOutletContext]="{aVaiable: 'Jaisalmer'}" [ngTemplateOutlet]="selfiej" #selfiej> 
+                      
+                        <div class="front"  style="background-image: url(https://static.toiimg.com/thumb/68427211/3.jpg?width=1200&height=900);" >
                             <div class="inner">
-                                <p>Jaisalmer</p>
+                                <p>{{e}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="vlist()">
+                            <div class="inner" (click)="vlist(e)" >
                                 <p>Get information about vaccination-camps in Jaisalmer and get registered.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="vlist()" style="background-image: url(https://images.citizenmatters.in/wp-content/uploads/sites/2/2020/04/29111406/Bhilwara-678x381.jpg); "  >
+                        <ng-template let-f="aVariabe" [ngTemplateOutletContext]="{aVariabe: 'Bhilwara'}" [ngTemplateOutlet]="selfieg" #selfieg> 
+                        <div class="front"  style="background-image: url(https://images.citizenmatters.in/wp-content/uploads/sites/2/2020/04/29111406/Bhilwara-678x381.jpg); "  >
                             <div class="inner">
-                                <p>Bhilwara</p>
+                                <p>{{f}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="vlist()">
+                            <div class="inner" (click)="vlist(f)" >
                               <p>Get information about vaccination-camps in Bhilwara and get registered.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                
@@ -126,47 +140,55 @@
             <div class="cols">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
+                        <ng-template let-g="aVariableo" [ngTemplateOutletContext]="{aVariableo: 'Bikaner'}" [ngTemplateOutlet]="selfiec" #selfiec>
                         <div class="front"  style="background-image: url(https://media.architecturaldigest.in/wp-content/uploads/2019/10/Bikaner-Avani-Rai-fetaured-image.jpg)">
                             <div class="inner">
-                                <p>Bikaner</p>
+                                <p>{{g}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="vlist()">
+                            <div class="inner" (click)="vlist(g)">
                                 <p>Get information about vaccination-camps in Bikaner and get registered.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
+                        <ng-template let-h="aVariableom" [ngTemplateOutletContext]="{aVariableom: 'Jodhpur'}" [ngTemplateOutlet]="selfiech" #selfiech>
+                       
                         <div class="front"  style="background-image: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Mehrangarh-Fort-Jodhpur.jpg)" >
                             <div class="inner">
-                                <p>Jodhpur</p>
+                                <p>{{h}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="vlist()">
+                            <div class="inner" (click)="vlist(h)" >
                                 <p>Get information about vaccination-camps in Jodhpur and get registered.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
+                        <ng-template let-i="aVariableomg" [ngTemplateOutletContext]="{aVariableomg: 'Chittorgarh'}" [ngTemplateOutlet]="selfiechw" #selfiechw>
+                       
                         <div class="front"  style="background-image: url(https://www.swantour.com/blogs/wp-content/uploads/2019/02/Chittorgarh-Fort.jpg)">
                             <div class="inner">
-                                <p>Chittorgarh</p>
+                                <p>{{i}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="vlist()">
+                            <div class="inner" (click)="vlist(i)" >
                                 <p>Get information about vaccination-camps in Chittorgarh and get registered.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>          
             </div>

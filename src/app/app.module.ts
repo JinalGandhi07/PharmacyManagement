@@ -24,6 +24,15 @@ import { PlasmalistComponent } from './plasmalist/plasmalist.component';
 import { DonorlistComponent } from './donorlist/donorlist.component';
 import { EligibilityComponent } from './eligibility/eligibility.component';
 import { FormsModule } from '@angular/forms';
+import { DonatedisplayComponent } from './donatedisplay/donatedisplay.component';
+import { NeeddisplayComponent } from './needdisplay/needdisplay.component';
+import { HomescreenComponent } from './homescreen/homescreen.component';
+import { ChoiceComponent } from './choice/choice.component';
+import { DistriformComponent } from './distriform/distriform.component';
+import { HospitalformComponent } from './hospitalform/hospitalform.component';
+import { VaccinedisplayComponent } from './vaccinedisplay/vaccinedisplay.component';
+import { MedicinedisplayComponent } from './medicinedisplay/medicinedisplay.component';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +53,15 @@ import { FormsModule } from '@angular/forms';
     VaccinelistComponent,
     PlasmalistComponent,
     DonorlistComponent,
-    EligibilityComponent
+    EligibilityComponent,
+    DonatedisplayComponent,
+    NeeddisplayComponent,
+    HomescreenComponent,
+    ChoiceComponent,
+    DistriformComponent,
+    HospitalformComponent,
+    VaccinedisplayComponent,
+    MedicinedisplayComponent
   ],
   imports: [
     BrowserModule,

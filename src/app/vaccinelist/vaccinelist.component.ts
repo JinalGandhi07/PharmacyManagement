@@ -1,6 +1,7 @@
 import { AuthService } from './../services/auth.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { MemberService } from '../services/member.service';
 
 @Component({
   selector: 'app-vaccinelist',
@@ -8,15 +9,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vaccinelist.component.scss']
 })
 export class VaccinelistComponent implements OnInit {
+ 
+ a;
+ i;
+  constructor(private router:Router,private as:AuthService,public route:ActivatedRoute,public member:MemberService) { }
 
-  constructor(private router:Router,private as:AuthService) { }
-
-onClick(){
-  this.router.navigateByUrl('/display');
-}
+ 
 
   ngOnInit(): void {
+
+    this.route.params.subscribe(res=>{
+      console.log(res['id'])
+      this.a=res['id']
+    })
+    this.member.getvaccinecenter(this.a)
   }
+  onClick(indexOfelement){
+
+    for( this.i=0;this.i<=indexOfelement;this.i++){
+      console.log(this.member.vaccinationcenters[this.i].id)
+        let url='/vaccinedisplay/'+this.member.vaccinationcenters[this.i].id;
+        this.router.navigateByUrl(url);
+    }
+      }
   logout(){
     this.as.signout();
    }
