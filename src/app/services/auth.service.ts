@@ -11,6 +11,7 @@ export class AuthService {
   registerWithEmail(Email: string, Password: string) {
   return this.afu.createUserWithEmailAndPassword(Email,Password).then((user)=>{
   this.authState=user
+  // console.log("reg m:"+this.authState)
   this.signedin=true;
    }).catch(error=>{
      console.log(error)
@@ -21,6 +22,7 @@ export class AuthService {
   loginWithEmail(Email: string, Password: string) {
     return this.afu.signInWithEmailAndPassword(Email,Password).then((user)=>{
     this.authState=user
+    // console.log("login m:"+this.authState)
     this.signedin=true;
      }).catch(error=>{
        alert(error);

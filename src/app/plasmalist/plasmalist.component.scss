@@ -173,6 +173,7 @@ ol.gradient-list {
 .navbars a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(245, 238, 238);
   box-shadow: 2px 2px 10px black;
+  cursor: pointer;
 }
 
 /* Dropdown content (hidden by default) */
@@ -186,6 +187,7 @@ ol.gradient-list {
 }
 .dropbtn:hover{
   box-shadow:  2px 10px black;
+  cursor: pointer;
 }
 /* Links inside the dropdown */
 .dropdown-content a {

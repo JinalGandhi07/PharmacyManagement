@@ -89,6 +89,7 @@ a:hover {
   .navbars a:hover, .dropdowns:hover .dropbtns {
     background-color: rgb(245, 238, 238);
     box-shadow: 2px 2px 10px black;
+    cursor: pointer;
   }
   
   /* Dropdown content (hidden by default) */
@@ -102,6 +103,7 @@ a:hover {
   }
   .dropbtns:hover{
     box-shadow:  2px 10px black;
+    cursor: pointer;
   }
   /* Links inside the dropdown */
   .dropdowns-content a {
