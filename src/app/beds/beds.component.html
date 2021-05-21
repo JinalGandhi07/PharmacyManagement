@@ -24,9 +24,9 @@
 
  <header><h1>Hospitals with Available Beds</h1></header>
     <main>
-  <ol class="gradient-list" (click)="onClick()">
-    <li>Shah hospital Udaipur</li>
-    <li>Geetanjali hospital Udaipur</li>
+  <ol class="gradient-list" >
+    <li (click)="onClick(indexOfelement)" *ngFor="let item of member.result; let indexOfelement=index;">{{member.result[indexOfelement].Name}},  {{member.result[indexOfelement].City}}</li>
+    <!-- <li>Geetanjali hospital Udaipur</li>
     <li>Madhuban hospital Udaipur</li>
     <li>ESI Hospital Udaipur</li>
     <li>Shelby Hospital Jaipur</li>
@@ -45,7 +45,7 @@
     <li>Hardik Hospital Jaipur</li>
     <li>Vanawat Hospital Bhilwara</li>
     <li>Ashish Hospital Ajmer</li>
-    <li>Fateh Hospital Mt. Abu</li>
+    <li>Fateh Hospital Mt. Abu</li> -->
     <!--<li>Sed id felis mollis, bibendum orci a, condimentum augue.</li>
     <li>Etiam eleifend ipsum nec nibh aliquam, non commodo risus eleifend.</li>
     <li>Curabitur in ipsum eget lacus blandit maximus in at sem.</li>

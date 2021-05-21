@@ -13,7 +13,7 @@ export class AuthguardService {
       return true;
     }
     else{
-      this.router.navigateByUrl('/login')
+      this.router.navigateByUrl('/homescreen')
       return false;
     }
   }

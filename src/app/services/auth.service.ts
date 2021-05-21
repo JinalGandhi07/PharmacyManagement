@@ -72,7 +72,7 @@ export class AuthService {
     this.signedin=false;
     this.afu.signOut();
    
-    this.router.navigateByUrl('/login');
+    this.router.navigateByUrl('/homescreen');
   }
 
   isUserSignedIn(){

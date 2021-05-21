@@ -30,94 +30,112 @@
         <div class="cols">
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container" >
-                          <div class="front"   (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg); "  >
+                        <ng-template let-a="aVariable" [ngTemplateOutletContext]="{aVariable: 'Favipiravir-Tablets'}" [ngTemplateOutlet]="selfie" #selfie>  
+                        
+                          <div class="front" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg); "  >
                               <div class="inner">
-                                  <p>Favipiravir Tablets</p>
+                                  <p>{{a}}</p>
                     <!-- <span>Lorem ipsum</span> -->
                               </div>
                           </div>
                           <div class="back">
-                              <div class="inner" (click)="cardm()">
+                              <div class="inner" (click)="cardm(a)">
                                 <p>Favipiravir has shown rapid viral clearance and faster clinical improvement</p>
                               </div>
                           </div>
+                          </ng-template>
                       </div>
                   </div>
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container">
-                          <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);" >
+                        <ng-template let-b="Variable" [ngTemplateOutletContext]="{Variable: 'Azithromycin'}" [ngTemplateOutlet]="selfies" #selfies> 
+                        
+                          <div class="front" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);" >
                               <div class="inner">
-                                  <p>Azithromycin</p>
+                                  <p>{{b}}</p>
                     <!-- <span>Lorem ipsum</span> -->
                               </div>
                           </div>
                           <div class="back">
-                              <div class="inner" (click)="cardm()">
+                              <div class="inner" (click)="cardm(b)">
                                   <p>It is an antibiotic madication used to trear a number of bacterial infections.</p>
                               </div>
                           </div>
+                          </ng-template>
                       </div>
                   </div>
                   <div class="col" ontouchstart="this.classList.toggle('hover');">
                       <div class="container">
-                          <div class="front" (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg)">
+                        <ng-template let-c="ariable" [ngTemplateOutletContext]="{ariable: 'Paracetamol'}" [ngTemplateOutlet]="selfiek" #selfiek> 
+                       
+                          <div class="front" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg)">
                               <div class="inner">
-                                  <p>Paracetamol</p>
+                                  <p>{{c}}</p>
                     <!-- <span>Lorem ipsum</span> -->
                               </div>
                           </div>
                           <div class="back">
-                              <div class="inner" (click)="cardm()">
+                              <div class="inner" (click)="cardm(c)">
                                   <p>Paracetamol, also known as acetaminophen, is a medication used to treat fever and mild to moderate pain.</p>
                               </div>
                           </div>
+                          </ng-template>
                       </div>
                   </div>            
               </div>
               <div class="cols">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); "  >
+                        <ng-template let-d="aVariabl" [ngTemplateOutletContext]="{aVariabl: 'Zinc-Tablets'}" [ngTemplateOutlet]="selie" #selie> 
+                       
+                        <div class="front"  style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); "  >
                             <div class="inner">
-                                <p>Zinc Tablets</p>
+                                <p>{{d}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="cardm()">
+                            <div class="inner" (click)="cardm(d)">
                               <p>Zinc Tablets provide necessary zinc supplement in our body to boost immunity.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg);" >
+                        <ng-template let-e="aVaiable" [ngTemplateOutletContext]="{aVaiable: 'Vitamin-C'}" [ngTemplateOutlet]="selfiej" #selfiej> 
+                      
+                        <div class="front"  style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg);" >
                             <div class="inner">
-                                <p>Vitamin C</p>
+                                <p>{{e}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="cardm()">
+                            <div class="inner" (click)="cardm(e)">
                                 <p>Rich source of antioxidants.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="cardm()" style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg); "  >
+                        <ng-template let-f="aVariabe" [ngTemplateOutletContext]="{aVariabe: 'Remdesivir'}" [ngTemplateOutlet]="selfieg" #selfieg> 
+                       
+                        <div class="front"  style="background-image: url(https://image.freepik.com/free-photo/assorted-pharmaceutical-medicine-pills-tablets-capsules-bottle-blue-background-copy-space-text_130265-1145.jpg); "  >
                             <div class="inner">
-                                <p>Remdesivir</p>
+                                <p>{{f}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="cardm()">
+                            <div class="inner" (click)="cardm(f)">
                               <p>Remdesivir (Veklury) is the first drug approved by the FDA for treating the SARS-CoV-2 virus.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                
@@ -126,47 +144,56 @@
             <div class="cols">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
+                        <ng-template let-g="aVariableo" [ngTemplateOutletContext]="{aVariableo: 'Doxycycline-Capsule'}" [ngTemplateOutlet]="selfiec" #selfiec>
+                        
+                        <div class="front" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
                             <div class="inner">
-                                <p>Doxycycline Capsule</p>
+                                <p>{{g}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="cardm()">
+                            <div class="inner" (click)="cardm(g)">
                                 <p>Doxycycline is an antibiotic medicine used to treat bacterial infections in your body.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);" >
+                        <ng-template let-h="aVariableom" [ngTemplateOutletContext]="{aVariableom: 'Ivermectin-Tablets'}" [ngTemplateOutlet]="selfiech" #selfiech>
+                       
+                        <div class="front" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);" >
                             <div class="inner">
-                                <p>Ivermectin Tablets</p>
+                                <p>{{h}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="cardm()">
+                            <div class="inner" (click)="cardm(h)">
                                 <p>Ivermectin is an anthelmintic agent used to treat various parasitic infestations of the human body.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
-                        <div class="front" (click)="cardm()" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
+                        <ng-template let-i="aVariableomg" [ngTemplateOutletContext]="{aVariableomg: 'All-Medicines'}" [ngTemplateOutlet]="selfiechw" #selfiechw>
+                       
+                        <div class="front" style="background-image: url(https://images.unsplash.com/photo-1573883429746-084be9b5cfca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
                             <div class="inner">
-                                <p>All Medicines</p>
+                                <p>{{i}}</p>
                   <!-- <span>Lorem ipsum</span> -->
                             </div>
                         </div>
                         <div class="back">
-                            <div class="inner" (click)="cardm()">
+                            <div class="inner" (click)="cardm(i)">
                                 <p>Get Information about ditributors providing COVID-19 and other medicines.</p>
                             </div>
                         </div>
+                        </ng-template>
                     </div>
                 </div>          
             </div>

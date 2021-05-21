@@ -24,9 +24,9 @@
 
  <header><h1>Distributors with Available Covid Medicines</h1></header>
     <main>
-  <ol class="gradient-list" (click)="onClick()">
-    <li>Shah Medicals Udaipur</li>
-    <li>Prateek Distributors Udaipur</li>
+  <ol class="gradient-list" >
+    <li (click)="onClick(indexOfelement)" *ngFor="let item of member.alldistributors; let indexOfelement=index;">{{member.alldistributors[indexOfelement].Name}} {{member.alldistributors[indexOfelement].City}}</li>
+    <!-- <li>Prateek Distributors Udaipur</li>
     <li>Madhuban hospital Udaipur</li>
     <li>Gandhi Distributors Udaipur</li>
     <li>Kriti Pharmacy Jaipur</li>
@@ -45,7 +45,7 @@
     <li>Hardik Pharmacy Jaipur</li>
     <li>Vanawat Medicals Bhilwara</li>
     <li>Ashish Distributors Ajmer</li>
-    <li>Fateh Medical Store Mt. Abu</li>
+    <li>Fateh Medical Store Mt. Abu</li> -->
     <!--<li>Vestibulum eu risus efficitur, porta lacus a, mollis metus.</li>
     <li>Maecenas finibus arcu vel urna commodo, ac bibendum massa vestibulum.</li>
     <li>Praesent eleifend leo eget consectetur interdum.</li>

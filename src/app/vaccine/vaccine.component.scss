@@ -48,6 +48,8 @@ h1{
           perspective: 1000px;
 }
 
+
+
 .front{
       
   background-size: cover;
@@ -230,7 +232,9 @@ h1{
   padding: 14px 16px;
   text-decoration: none;
 }
-
+a:hover{
+  cursor: pointer;
+}
 /* The dropdown container */
 .dropdowns {
   float: left;

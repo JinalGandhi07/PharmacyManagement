@@ -25,9 +25,9 @@
     
  <header><h1>Vaccination Camps nearby you</h1></header>
     <main>
-  <ol class="gradient-list" (click)="onClick()">
-    <li>Shah Hospital Bhopalpura</li>
-    <li>Prateek School Peepli</li>
+  <ol class="gradient-list" >
+    <li (click)="onClick(indexOfelement)" *ngFor="let item of member.vaccinationcenters; let indexOfelement=index;">{{member.vaccinationcenters[indexOfelement].Name}} for {{member.vaccinationcenters[indexOfelement].Age}}</li>
+    <!-- <li>Prateek School Peepli</li>
     <li>Madhuban hospital Sukhadiya Circle</li>
     <li>Gandhi Hospital University Road</li>
     <li>Kriti Pharmacy Bohra ganesh</li>
@@ -50,7 +50,7 @@
     <li>Gandhi Hospital University Road</li>
     <li>Kriti Pharmacy Bohra ganesh</li>
     <li>Khabya Medicals Badi Peepli</li>
-    <!--<li>Vestibulum eu risus efficitur, porta lacus a, mollis metus.</li>
+    <li>Vestibulum eu risus efficitur, porta lacus a, mollis metus.</li>
     <li>Maecenas finibus arcu vel urna commodo, ac bibendum massa vestibulum.</li>
     <li>Praesent eleifend leo eget consectetur interdum.</li>
     <li>Suspendisse et lectus gravida, interdum mauris aliquet, mattis purus.</li>
@@ -72,7 +72,7 @@
     <li>Maecenas feugiat quam at facilisis dapibus.</li>
     <li>Cras commodo leo sit amet lacus lacinia, eget rutrum sem sodales.</li>
     <li>Ut sit amet risus finibus, iaculis lectus sit amet, varius lectus.</li>
-    <li>Duis dignissim elit eget erat maximus luctus.</li>-->
+    <li>Duis dignissim elit eget erat maximus luctus.</li>--> 
   </ol>
 </main>
 </body>

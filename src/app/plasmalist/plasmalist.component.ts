@@ -1,6 +1,7 @@
 import { AuthService } from './../services/auth.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { MemberService } from '../services/member.service';
 
 @Component({
   selector: 'app-plasmalist',
@@ -8,14 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plasmalist.component.scss']
 })
 export class PlasmalistComponent implements OnInit {
+i;
+  constructor(private router:Router,private as:AuthService,public member:MemberService) { }
 
-  constructor(private router:Router,private as:AuthService) { }
+  onClick(indexOfelement){
 
-  onClick(){
-    this.router.navigateByUrl('/display');
-  }
+    for( this.i=0;this.i<=indexOfelement;this.i++){
+      console.log(this.member.needplasma[this.i].id)
+        let url='/needdisplay/'+this.member.needplasma[this.i].id;
+        this.router.navigateByUrl(url);
+    }
+      }
 
   ngOnInit(): void {
+    this.member.getneedplasma();
   }
   logout(){
     this.as.signout();

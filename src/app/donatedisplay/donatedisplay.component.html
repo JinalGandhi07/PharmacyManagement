@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="blog-card">
+      <input type="radio" name="select" id="tap-1" checked>
+      <input type="radio" name="select" id="tap-2">
+      <input type="radio" name="select" id="tap-3">
+      <input type="checkbox" id="imgTap">
+      <div class="sliders">
+        <label for="tap-1" class="tap tap-1"></label>
+        <label for="tap-2" class="tap tap-2"></label>
+        <label for="tap-3" class="tap tap-3"></label>
+      </div>
+      
+<div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-1" src="/assets/hd3.jpg">
+        </label> 
+        <div class="content content-1">
+          <!-- <span>Vitamin c</span> -->
+          <div class="title">{{details.Name}}</div>
+		  <!-- <div class="icon"></div> -->
+		  
+<div class="text">
+	<h3><i class="fa fa-map-marker" style="font-size:36px"></i>  Address</h3>
+	<p>{{details.Address}}</p>
+</div>
+<!-- <button>Read more</button> -->
+        </div> 
+</div>
+<div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-2" src="/assets/hd3.jpg">
+        </label>
+        <div class="content content-2">
+          <!-- <span>Vitamin C</span> -->
+          <div class="title">{{details.Name}}</div>
+		  <!-- <div class="icon"></div> -->
+		  
+		  <div class="text">
+			  <h3><i class="fa fa-phone" tyle="font-size:48px"></i>  Phone</h3>
+			  <p>{{details.Contact}}</p>
+        <p>{{details.ContactTwo}}</p>
+		  </div>        </div>
+</div>
+<div class="inner-part">
+        <label for="imgTap" class="img">
+          <img class="img-3" src="/assets/hd3.jpg">
+        </label>
+        <div class="content content-3">
+          <!-- <span>Vitamin C</span> -->
+          <div class="title">{{details.Name}}</div>
+<!-- <div class="icon"></div> -->
+		  
+<div class="text">
+	<h3><i class="fa fa-envelope" tyle="font-size:48px"></i> Email</h3>
+	<p>{{details.Email}}</p>
+</div>        </div>
+</div>
+<button type="submit" (click)="back()" class="submit-btn">Go Back</button>
+</div>
+</body>
+</html>
