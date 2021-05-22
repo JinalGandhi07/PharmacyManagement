@@ -5,6 +5,7 @@ body {
     overflow:hidden;
     overflow-x: hidden;
     overflow-y: hidden;
+    max-height: 600px;
 }
 h5{
     font-family: 'Times New Roman', Times, serif;
@@ -14,9 +15,9 @@ p{
 }
 a:hover {
     text-decoration: none;
-      cursor: pointer;
-    
+      cursor: pointer;  
 }
+
 .icon{
     font-size: 40px;
     color: black;
@@ -30,7 +31,7 @@ a:hover {
     border: black;
     border-radius: 2%;
     background:rgb(241, 247, 250);
-    height: 388px;
+    height: 360px;
     box-shadow: black;
 }
 .card:hover {
@@ -43,7 +44,7 @@ a:hover {
     border: black;
     border-radius: 2%;
     background: linear-gradient(315deg,#96c8fb 0%,#ddbdfc 74%);
-    height: 388px;
+    height: 360px;
     box-shadow: black;
 }
 .cardmiddle:hover {

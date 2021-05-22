@@ -26,6 +26,7 @@ import { HospitalformComponent } from './hospitalform/hospitalform.component';
 import { DistriformComponent } from './distriform/distriform.component';
 import { VaccinedisplayComponent } from './vaccinedisplay/vaccinedisplay.component';
 import { MedicinedisplayComponent } from './medicinedisplay/medicinedisplay.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,7 @@ const routes: Routes = [
   {path:'plasmalist',component:PlasmalistComponent,canActivate:[AuthguardService]},
   {path:'donorlist',component:DonorlistComponent,canActivate:[AuthguardService]},
   {path:'ab',component:EligibilityComponent,canActivate:[AuthguardService]},
+  {path:'aboutus',component:AboutusComponent,canActivate:[AuthguardService]},
   {path:'vaccinedisplay/:id',component:VaccinedisplayComponent,canActivate:[AuthguardService]},
   {path:'medicinedisplay/:id',component:MedicinedisplayComponent,canActivate:[AuthguardService]}
 ];

@@ -33,7 +33,12 @@ p:string=""
       console.log(res['a'])
       this.a=res['a']
     })
+if(this.a=="Various-Medicines"){
+  this.member.getalldistributors()
+}
+else{
 this.member.getdistributors(this.a)
+}
   }
 
   logout(){

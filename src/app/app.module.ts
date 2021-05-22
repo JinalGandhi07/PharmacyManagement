@@ -32,6 +32,7 @@ import { DistriformComponent } from './distriform/distriform.component';
 import { HospitalformComponent } from './hospitalform/hospitalform.component';
 import { VaccinedisplayComponent } from './vaccinedisplay/vaccinedisplay.component';
 import { MedicinedisplayComponent } from './medicinedisplay/medicinedisplay.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { MedicinedisplayComponent } from './medicinedisplay/medicinedisplay.comp
     DistriformComponent,
     HospitalformComponent,
     VaccinedisplayComponent,
-    MedicinedisplayComponent
+    MedicinedisplayComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

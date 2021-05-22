@@ -8,9 +8,11 @@
 /* The card */
 .card{
 	position : relative;
-	height: 540px;
+	height: 510px;
 	width: 1000px;
-	margin : 60px 180px 0px 100px;
+	// margin : 60px 180px 0px 100px;
+  margin-left: 180px;
+  margin-top: 40px;
 	// background-color : #FFF;
     background: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
 	// -webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
