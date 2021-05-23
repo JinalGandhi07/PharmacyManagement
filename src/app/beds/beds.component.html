@@ -22,7 +22,24 @@
     <a (click)="logout()" >Log Out</a>
   </div>
 
+
  <header><h1>Hospitals with Available Beds</h1></header>
+ <!-- <label for="name">Name:</label> -->
+ <form ngNativeValidate>
+ <input type="text" list="city" name="city" [(ngModel)]="city" required >
+ <datalist id="city">
+  <option value="All Cities">
+   <option value="Udaipur">
+   <option value="Ajmer">
+   <option value="Jaipur">
+   <option value="Bhilwara">
+   <option value="Jaisalmer">
+   <option value="Jodhpur">
+     <option value="Chittorgarh">
+       <option value="Bikaner">
+         <option value="Kota">
+           
+ </datalist> <button (click)="search()" class="buttonk" type="submit">Search</button></form>
     <main>
   <ol class="gradient-list" >
     <li (click)="onClick(indexOfelement)" *ngFor="let item of member.result; let indexOfelement=index;">{{member.result[indexOfelement].Name}},  {{member.result[indexOfelement].City}}</li>

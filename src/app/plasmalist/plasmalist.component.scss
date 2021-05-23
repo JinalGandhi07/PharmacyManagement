@@ -251,3 +251,56 @@ ol.gradient-list {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  margin-left: 300px;
+  width: 50%;
+  margin-top: 20px;
+  background-color: #e8eeef;
+  color: #3c474e;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-flex;
+}
+
+.buttonk {
+margin-top: 10px;
+  
+  color: #FFF;
+  background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  font-size: 20px;
+  margin-left: 10px;
+  align-self: center;
+  text-align: center;
+  font-style: normal;
+  height: 45px;
+  width: 85px;
+  font-family: 'Times New Roman', Times, serif;
+border: black;
+border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+}
+.buttonk:hover{
+    cursor: pointer;
+    background:rgb(57, 194, 57);
+    color: black;
+}

@@ -10,7 +10,16 @@ import { MemberService } from '../services/member.service';
 })
 export class DonorlistComponent implements OnInit {
 i;
+city;
   constructor(private router:Router,private as:AuthService, public member:MemberService) { }
+
+  search(){
+    if(this.city=="All Cities" || this.city==""){
+      this.member.getdonateplasma();
+    }
+    else{
+ this.member.getdonateplasmacities(this.city);}
+  }
   onClick(indexOfelement){
 
     for( this.i=0;this.i<=indexOfelement;this.i++){

@@ -11,8 +11,7 @@ import { MemberService } from '../services/member.service';
 export class MedicineComponent implements OnInit {
 i:number
 a:string
-gotdistributors:boolean=false;
-p:string=""
+city;
   constructor(private router:Router,private as:AuthService,public member:MemberService,public route:ActivatedRoute) { 
  
   }
@@ -38,6 +37,21 @@ if(this.a=="Various-Medicines"){
 }
 else{
 this.member.getdistributors(this.a)
+}
+  }
+
+  search(){
+    if((this.city=="All Cities" || this.city=="") && this.a=="Various-Medicines"){
+      this.member.getalldistributors()
+    }
+    else if(this.city=="All Cities" || this.city==""){
+      this.member.getdistributors(this.a)
+    }
+    else if((this.city!="All Cities" || this.city!="") && this.a=="Various-Medicines"){
+this.member.getdistributorsonlybycities(this.city)
+    }
+    else {
+ this.member.getdistributorscities(this.a,this.city);
 }
   }
 

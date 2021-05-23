@@ -24,9 +24,27 @@
 
  <header>
    <h1>Hospitals where you can Donate Plasma</h1></header>
+
+   <form ngNativeValidate>
+    <input type="text" list="city" name="city" [(ngModel)]="city" required >
+    <datalist id="city">
+     <option value="All Cities">
+      <option value="Udaipur">
+      <option value="Ajmer">
+      <option value="Jaipur">
+      <option value="Bhilwara">
+      <option value="Jaisalmer">
+      <option value="Jodhpur">
+        <option value="Chittorgarh">
+          <option value="Bikaner">
+            <option value="Kota">
+              
+    </datalist> <button (click)="search()" class="buttonk" type="submit">Search</button></form>
+
  <a  class="fl_inst2" (click)="clicke()">   <div class="icon"> 
     <i class="bi bi-check-circle-fill"></i></div><span>Know about Donor Eligibility</span>
 </a>
+
     <main>
   <ol class="gradient-list" >
     <li (click)="onClick(indexOfelement)" *ngFor="let item of member.donateplasma; let indexOfelement=index;">{{member.donateplasma[indexOfelement].Name}},  {{member.donateplasma[indexOfelement].City}}</li>

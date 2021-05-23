@@ -10,15 +10,23 @@ import { MemberService } from '../services/member.service';
 })
 export class BedsComponent implements OnInit {
  i:number;
+ city;
  
   constructor(private router:Router,private authService:AuthService, public member:MemberService) { 
     
   }
 
   ngOnInit() {
+  
     this.member.getbedhospitals();
   }
- 
+ search(){
+   if(this.city=="All Cities" || this.city==""){
+     this.member.getbedhospitals();
+   }
+   else{
+this.member.getbedhospitalscities(this.city);}
+ }
   onClick(indexOfelement){
 
 for( this.i=0;this.i<=indexOfelement;this.i++){

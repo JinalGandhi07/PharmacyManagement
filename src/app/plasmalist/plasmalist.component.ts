@@ -10,6 +10,7 @@ import { MemberService } from '../services/member.service';
 })
 export class PlasmalistComponent implements OnInit {
 i;
+city;
   constructor(private router:Router,private as:AuthService,public member:MemberService) { }
 
   onClick(indexOfelement){
@@ -27,4 +28,12 @@ i;
   logout(){
     this.as.signout();
    }
+   search(){
+    if(this.city=="All Cities" || this.city==""){
+      this.member.getneedplasma();
+    }
+    else{
+ this.member.getneedplasmacities(this.city);}
+  }
+
 }
