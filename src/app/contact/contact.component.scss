@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  
 }
 body{
   margin: 10px;
@@ -19,6 +19,7 @@ section{
   justify-content: center;
   align-items: center;
   min-height: 635px;
+  font-family: 'Times New Roman', Times, serif;
   // background-image: url(/assets/Banner2.jpeg);
   //background: darkblue;
   background: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
@@ -203,7 +204,7 @@ section .container .contactinfo .sci li:hover  img{
     padding: 12px;
   }
   section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
-    background: green;
+    background:rgb(57, 194, 57);
   }
 
   

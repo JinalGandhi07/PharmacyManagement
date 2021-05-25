@@ -115,6 +115,18 @@ export class MemberService {
     // alert("Distributor Successfully Added.")
   }
 
+  addContactForm(member)
+  {
+    let tempStudent:{FirstName:string,LastName:string,Message:string,Email:string,Contact:number}=member
+    tempStudent.FirstName=member.FirstName
+    tempStudent.LastName=member.LastName
+    tempStudent.Message=member.Message
+    tempStudent.Email=member.Email
+    tempStudent.Contact=member.Contact
+    this.db.collection("ContactForm").add(tempStudent) 
+    // alert("Distributor Successfully Added.")
+  }
+
 
 
   getvaccinecenter(b){
