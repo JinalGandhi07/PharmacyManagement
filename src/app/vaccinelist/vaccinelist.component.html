@@ -24,6 +24,21 @@
 
     
  <header><h1>Vaccination Camps nearby you</h1></header>
+ <form ngNativeValidate>
+  <input autocomplete="off" placeholder="Enter Your Age Preference" type="text" list="age" name="age" [(ngModel)]="age" required >
+  <datalist id="age">
+   <option value="For All Ages">
+    <option value="Age 18+">
+    <option value="Age 45+">
+    <!-- <option value="Jaipur">
+    <option value="Bhilwara">
+    <option value="Jaisalmer">
+    <option value="Jodhpur">
+      <option value="Chittorgarh">
+        <option value="Bikaner">
+          <option value="Kota">  -->
+            
+  </datalist> <button (click)="search()" class="buttonk" type="submit">Search</button></form> 
     <main>
   <ol class="gradient-list" >
     <li (click)="onClick(indexOfelement)" *ngFor="let item of member.vaccinationcenters; let indexOfelement=index;">{{member.vaccinationcenters[indexOfelement].Name}} for {{member.vaccinationcenters[indexOfelement].Age}}</li>

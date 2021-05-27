@@ -145,6 +145,22 @@ export class MemberService {
     })
   }
 
+  getvaccinecenterwithage(b,age){
+    // console.log(this.auth.loggedinuserid)
+    this.db.collection("VaccinationCenters",ref=>ref.where('City','==',b).where('Age','==',age))
+    .snapshotChanges()
+    .pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as any;
+        const id = a.payload.doc.id;
+        return { id, ...data };
+      }))
+    ).subscribe(res=>{
+      console.log(res)
+      this.vaccinationcenters=res
+    })
+  }
+
   getdistributors(b){
     // console.log(this.auth.loggedinuserid)
     this.db.collection("Distributors",ref=>ref.where('Medicines','array-contains',b))

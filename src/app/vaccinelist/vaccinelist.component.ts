@@ -12,6 +12,7 @@ export class VaccinelistComponent implements OnInit {
  
  a;
  i;
+ age="";
   constructor(private router:Router,private as:AuthService,public route:ActivatedRoute,public member:MemberService) { }
 
  
@@ -32,6 +33,16 @@ export class VaccinelistComponent implements OnInit {
         this.router.navigateByUrl(url);
     }
       }
+      
+    search(){
+        if(this.age=="For All Ages" || this.age==""){
+          this.member.getvaccinecenter(this.a)
+        }
+        else{
+    this.member.getvaccinecenterwithage(this.a,this.age)
+      }
+    }
+
   logout(){
     this.as.signout();
    }
