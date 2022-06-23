@@ -11,6 +11,18 @@ body{
 }
 a:hover{
   cursor: pointer;
+ 
+}
+.maillink{
+  color:#fff;
+  max-width: 100%;
+  opacity: 0.8;
+  font-weight: 700;
+  font:  sans-serif;
+}
+.maillink:hover{
+  opacity: 1;
+  cursor: pointer;
 }
 
 section{
